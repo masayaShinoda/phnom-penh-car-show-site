@@ -1,3 +1,7 @@
+::selection {
+  background: #535353;
+  color: #fcfcfc;
+}
 html,
 body {
   padding: 0;
