@@ -69,6 +69,8 @@
             flex-direction: column;
   }
   .closeNavBtn span {
+    top: 5vh;
+    left: 5vw;
     display: block;
     margin: 0 auto;
     -webkit-transform: rotate(45deg);
