@@ -1,3 +1,7 @@
+.openNavBtn, .closeNavBtn {
+  display: none;
+}
+
 .Nav {
   position: fixed;
   top: 7.5vh;
@@ -5,19 +9,19 @@
 }
 
 .Nav a {
-  font-size: 1.2rem;
-  margin: 0 0.8rem;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
 }
 
 .ForSponsorBtn {
-  position: fixed;
-  top: 15vh;
-  right: 10vw;
-  font-size: 1.2rem;
-  margin: 0 1.1rem;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.1rem;
   background: #535353;
   color: #fcfcfc;
-  padding: 0.75rem;
+  padding: 0.5rem 0.8rem;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -27,11 +31,60 @@
   color: #333;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
   .Nav {
-    position: relative;
-    right: 0;
-    left: 0;
+    right: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .openNavBtn, .closeNavBtn {
+    display: block;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    width: 6.25vmax;
+    height: 6.25vmax;
+    border-radius: 100%;
+    background: #535353;
+    border: 0;
+  }
+  .openNavBtn span, .closeNavBtn span {
+    display: block;
+    margin: 10% auto;
+    width: 2.5vmax;
+    height: 0.25vmax;
+    border-radius: 0.25vmax;
+    background: #fcfcfc;
+  }
+  .closeNavBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .closeNavBtn span {
+    display: block;
+    margin: 0 auto;
+    width: 2.5vmax;
+    height: 0.25vmax;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .closeNavBtn span:nth-of-type(2n) {
+    background: #fcfcfc;
+    -webkit-transform: translateY(-0.25vmax) rotate(135deg);
+            transform: translateY(-0.25vmax) rotate(135deg);
+  }
+  .Nav {
+    display: none;
+    margin-top: 5vh;
+    margin-left: 5vw;
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

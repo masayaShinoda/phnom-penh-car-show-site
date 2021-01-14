@@ -1,23 +1,28 @@
 @import "./_variables.scss";    
 
+//hide navBtn on desktop by default
+.openNavBtn, .closeNavBtn {
+    display: none;
+}
 .Nav {
     position: fixed;
     top: 7.5vh;
-    right: 10vw;    
+    right: 10vw;
     a {
-        font-size: 1.2rem;
-        margin: 0 0.8rem;        
+        font-size: 1.1rem;
+        margin: 0 0.5rem;        
     }
 }
 .ForSponsorBtn {
-    position: fixed;
-    top: 15vh;
-    right: 10vw;
-    font-size: 1.2rem;
-    margin: 0 1.1rem;        
+    // position: fixed;
+    display: inline-block;
+    width: fit-content;
+    
+    font-size: 1.1rem;
+    // margin: 0.8rem 0;        
     background: #535353;
     color: #fcfcfc;
-    padding: 0.75rem;
+    padding: 0.5rem 0.8rem;
     transition: .2s ease-in-out;    
 
 }
@@ -25,11 +30,56 @@
     background: #dbdbdb;
     color: #333;
 }
-@media (max-width: $mobile-bp) {
+@media (max-width: $tablet-bp) {
+    // .openNavBtn, .closeNavBtn {
+    //     display: block;
+    // }
     .Nav {
-        position: relative;
-        right: 0;
-        left: 0;                
+        right: 5vw;
+    }    
+}
+@media (max-width: $mobile-bp) {
+    .openNavBtn, .closeNavBtn {
+        display: block;
+        position: fixed;
+        top: 5vh;
+        left: 5vw;
+        color: #fcfcfc;
+        font-size: 1.2rem;
+        width: 6.25vmax;
+        height: 6.25vmax;
+        border-radius: 100%;
+        background: #535353;
+        border: 0;
+        span {
+            display: block;
+            margin: 10% auto;
+            width: 2.5vmax;
+            height: 0.25vmax;
+            border-radius: 0.25vmax;
+            background: #fcfcfc;
+        }
     }
-    
+    .closeNavBtn {
+        display: flex;
+        flex-direction: column;
+        span {
+            display: block;
+            margin: 0 auto;
+            width: 2.5vmax;
+            height: 0.25vmax;
+            transform:  rotate(45deg);
+            
+        }
+        span:nth-of-type(2n) {            
+            background: #fcfcfc;
+            transform: translateY(-0.25vmax) rotate(135deg);
+
+        }
+    }
+    .Nav {
+        display: none;
+        margin-top: 5vh;
+        margin-left: 5vw;
+    }
 }
