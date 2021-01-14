@@ -46,17 +46,17 @@
         left: 5vw;
         color: #fcfcfc;
         font-size: 1.2rem;
-        width: 6.25vmax;
-        height: 6.25vmax;
+        width: 9.375vmax; 
+        height: 9.375vmax;
         border-radius: 100%;
         background: #535353;
         border: 0;
         span {
             display: block;
             margin: 10% auto;
-            width: 2.5vmax;
-            height: 0.25vmax;
-            border-radius: 0.25vmax;
+            width: 3.75vmax;
+            height: 0.375vmax;
+            border-radius: 0.5vmax;
             background: #fcfcfc;
         }
     }
@@ -66,8 +66,6 @@
         span {
             display: block;
             margin: 0 auto;
-            width: 2.5vmax;
-            height: 0.25vmax;
             transform:  rotate(45deg);
             
         }
@@ -79,7 +77,28 @@
     }
     .Nav {
         display: none;
-        margin-top: 5vh;
-        margin-left: 5vw;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 7.5vh;
+        margin-left: 0vw;
+        left: 5vw;
+        width: fit-content;
+        z-index: 100;
+        background: #666;
+        color: #fcfcfc;
+        box-shadow: rgba(25,25,25,.25) 1.1vmin .8vmin 0.5rem;
+        // border: 1px solid red; //debug
+        a {
+            margin: 2.5vh 4.25vw;
+        }
+        .ForSponsorBtn {
+            margin: 0 4.25vw;    
+            margin-bottom: 2.5vh;
+            background: #333;
+            color: #fcfcfc;
+            padding: 0.5rem 0.8rem;
+            transition: .2s ease-in-out;    
+        
+        }
     }
 }

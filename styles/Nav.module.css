@@ -45,8 +45,8 @@
     left: 5vw;
     color: #fcfcfc;
     font-size: 1.2rem;
-    width: 6.25vmax;
-    height: 6.25vmax;
+    width: 9.375vmax;
+    height: 9.375vmax;
     border-radius: 100%;
     background: #535353;
     border: 0;
@@ -54,9 +54,9 @@
   .openNavBtn span, .closeNavBtn span {
     display: block;
     margin: 10% auto;
-    width: 2.5vmax;
-    height: 0.25vmax;
-    border-radius: 0.25vmax;
+    width: 3.75vmax;
+    height: 0.375vmax;
+    border-radius: 0.5vmax;
     background: #fcfcfc;
   }
   .closeNavBtn {
@@ -71,8 +71,6 @@
   .closeNavBtn span {
     display: block;
     margin: 0 auto;
-    width: 2.5vmax;
-    height: 0.25vmax;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -83,8 +81,34 @@
   }
   .Nav {
     display: none;
-    margin-top: 5vh;
-    margin-left: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    margin-top: 7.5vh;
+    margin-left: 0vw;
+    left: 5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 100;
+    background: #666;
+    color: #fcfcfc;
+    -webkit-box-shadow: rgba(25, 25, 25, 0.25) 1.1vmin 0.8vmin 0.5rem;
+            box-shadow: rgba(25, 25, 25, 0.25) 1.1vmin 0.8vmin 0.5rem;
+  }
+  .Nav a {
+    margin: 2.5vh 4.25vw;
+  }
+  .Nav .ForSponsorBtn {
+    margin: 0 4.25vw;
+    margin-bottom: 2.5vh;
+    background: #333;
+    color: #fcfcfc;
+    padding: 0.5rem 0.8rem;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

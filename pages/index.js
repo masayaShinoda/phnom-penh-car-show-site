@@ -12,9 +12,6 @@ export default function Home() {
       </Head>
       <Nav></Nav>
       <Frontpage></Frontpage>
-
-
-
     </div>
   )
 }
