@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div id="wrapper" className={styles.container}>
       <Head>
         <title>Phnom Penh Car Show</title>
         <link rel="icon" href="/favicon.ico" />

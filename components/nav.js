@@ -11,6 +11,7 @@ export default function Nav() {
         document.getElementById("closeNavBtn").style.display = "none"
         document.getElementById("openNavBtn").style.display = "block"
     }
+    
     return (
         <>
             <button id="openNavBtn" onClick={openNav} className={styles.openNavBtn}>
