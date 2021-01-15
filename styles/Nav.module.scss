@@ -61,22 +61,22 @@
         }
     }
     .closeNavBtn {
-        display: block;
+        display: flex;
         flex-direction: column;
-        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red; //debug
         div {
+            border: 1px solid blue; //debug
             span {
                 display: block;
                 margin: 0 auto;
-                transform:  rotate(45deg);
-                
+                transform:  rotate(45deg);                
             }
             span:nth-of-type(2n) {            
                 background: #fcfcfc;
-                transform: translateY(-0.25vmax) rotate(135deg);
-    
+                transform: translateY(-0.25vmax) rotate(135deg);    
             }
-
         }
     }
     .Nav {
