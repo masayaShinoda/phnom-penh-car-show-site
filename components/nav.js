@@ -20,8 +20,10 @@ export default function Nav() {
                 <span></span>
             </button>
             <button id="closeNavBtn" onClick={closeNav} className={styles.closeNavBtn} style={{display: `none`}}>
-                <span></span>
-                <span></span>
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
             </button>
             <nav id="nav" className={styles.Nav}>
                 <a href="/">Project</a>
