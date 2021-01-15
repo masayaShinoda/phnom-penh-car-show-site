@@ -40,7 +40,7 @@
 }
 @media (max-width: $mobile-bp) {
     .openNavBtn, .closeNavBtn {
-        display: block;
+        
         position: fixed;
         top: 5vh;
         left: 5vw;
@@ -60,6 +60,9 @@
             background: #fcfcfc;
         }
     }
+    .openNavBtn {
+        display: block;
+    }
     .closeNavBtn {
         display: flex;
         flex-direction: column;
@@ -67,6 +70,8 @@
         align-items: center;
         border: 1px solid red; //debug
         div {
+            // position: fixed;
+            top: 9.375vmax;
             border: 1px solid blue; //debug
             span {
                 display: block;

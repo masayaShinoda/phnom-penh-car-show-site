@@ -41,7 +41,6 @@
 
 @media (max-width: 480px) {
   .openNavBtn, .closeNavBtn {
-    display: block;
     position: fixed;
     top: 5vh;
     left: 5vw;
@@ -61,6 +60,9 @@
     border-radius: 0.5vmax;
     background: #fcfcfc;
   }
+  .openNavBtn {
+    display: block;
+  }
   .closeNavBtn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -78,6 +80,7 @@
     border: 1px solid red;
   }
   .closeNavBtn div {
+    top: 9.375vmax;
     border: 1px solid blue;
   }
   .closeNavBtn div span {
