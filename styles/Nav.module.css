@@ -63,6 +63,7 @@
   }
   .closeNavBtn {
     display: block;
+    position: fixed;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
