@@ -1,3 +1,62 @@
+@import "./_variables.scss";
+
+.main {
+  display: flex;
+  margin-top: 20vh;
+  flex-direction: row;
+  // border: 1px solid red; //debug
+  // text-align: left;
+  
+ .leftDiv { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    margin-left: 10vw;
+
+  }
+
+  .rightDiv {
+    width: 30vw;
+    height: 80vh;
+    margin-left: 5vw;
+    background: url("https://images.unsplash.com/photo-1514249779951-c1f932dd2402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-size: cover;
+    // border: 1px solid green; //debug
+  }
+}
+
+@media (max-width: $tablet-bp) {
+  .main {
+    width: 100vw;
+    margin-top: 15vh;
+    justify-content: space-between;
+    // align-items: flex-start;
+    // border: 1px solid blue; //debug
+    .leftDiv {      
+      // margin-top: -20vh;  
+      justify-content: flex-start;
+      align-items: flex-start;
+      // border: 1px solid red; //debug
+      text-align: left;
+      // h1 {
+      //   font-size: 2.5rem;
+      // }
+      h1, p, span, div, a {
+        text-align: left;
+      }
+    }
+    .rightDiv {
+      width: 40vw;
+      height: 60vh;
+      // margin-left: 5vw;
+      // background: url("https://images.unsplash.com/photo-1514249779951-c1f932dd2402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+      // background-size: cover;
+      // border: 1px solid green; //debug
+    }
+  }    
+}
 
 .title a {
     color: #535353;
@@ -59,6 +118,8 @@
     line-height: 1.5;
   }
 
+  // maya styles
+
   #ticketBtn {
     color: #fcfcfc;
     background: #535353;
@@ -72,3 +133,4 @@
       color: #333;
     }
   }
+

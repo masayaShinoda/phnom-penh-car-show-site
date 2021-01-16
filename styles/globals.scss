@@ -1,0 +1,39 @@
+@import "./_variables.scss";
+
+::selection {
+  background: #535353;
+  color: #fcfcfc;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+// maya styles
+// body {
+//   background: url("https://images.unsplash.com/photo-1514249779951-c1f932dd2402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+//   background-repeat: no-repeat;
+// }
+h1 {
+    font-family: $head;
+    font-weight: 700;
+}
+h2, h3, p, a {
+    font-family: $body;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
