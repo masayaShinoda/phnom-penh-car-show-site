@@ -122,6 +122,9 @@
             flex-direction: column;
     margin: 0;
     position: absolute;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     top: 15vh;
     left: 5vw;
     width: -webkit-fit-content;
@@ -134,7 +137,16 @@
             box-shadow: rgba(25, 25, 25, 0.25) 1.1vmin 0.8vmin 0.5rem;
   }
   .Nav a {
-    margin: 2.5vh 4.25vw;
+    font-size: 1.25rem;
+    padding: 2.5vh 7.5vw;
+    margin: 0;
+  }
+  .Nav a:hover,
+  .Nav a:focus,
+  .Nav a:active {
+    background: #fcfcfc;
+    color: #666;
+    width: 100%;
   }
   .Nav .ForSponsorBtn {
     margin: 0 4.25vw;
@@ -144,6 +156,11 @@
     padding: 0.5rem 0.8rem;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
+  }
+  .Nav .ForSponsorBtn:hover {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

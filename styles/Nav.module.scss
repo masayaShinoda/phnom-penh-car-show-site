@@ -100,6 +100,7 @@
         // margin-top: 7.5vh;
         // margin-left: 0vw;
         position: absolute;
+        align-items: flex-start;
         top: 15vh;
         left: 5vw;
         width: fit-content;
@@ -109,7 +110,16 @@
         box-shadow: rgba(25,25,25,.25) 1.1vmin .8vmin 0.5rem;
         // border: 1px solid red; //debug
         a {
-            margin: 2.5vh 4.25vw;
+            font-size: 1.25rem;
+            padding: 2.5vh 7.5vw;
+            margin: 0;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            background: #fcfcfc;
+            color: #666;
+            width: 100%;
         }
         .ForSponsorBtn {
             margin: 0 4.25vw;    
@@ -117,8 +127,10 @@
             background: #333;
             color: #fcfcfc;
             padding: 0.5rem 0.8rem;
-            transition: .2s ease-in-out;    
-        
+            transition: .2s ease-in-out;        
+        }
+        .ForSponsorBtn:hover {
+            width: fit-content;
         }
     }
 }
