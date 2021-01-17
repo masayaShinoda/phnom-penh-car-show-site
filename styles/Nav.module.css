@@ -34,12 +34,6 @@
 }
 
 @media (max-width: 1023px) {
-  .Nav {
-    right: 5vw;
-  }
-}
-
-@media (max-width: 480px) {
   .openNavBtn, .closeNavBtn {
     position: fixed;
     top: 5vh;

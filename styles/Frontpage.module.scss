@@ -30,7 +30,7 @@
 @media (max-width: $tablet-bp) {
   .main {
     width: 100vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     justify-content: space-between;
     // align-items: flex-start;
     // border: 1px solid blue; //debug
@@ -53,9 +53,22 @@
       // margin-left: 5vw;
       // background: url("https://images.unsplash.com/photo-1514249779951-c1f932dd2402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
       // background-size: cover;
-      // border: 1px solid green; //debug
-    }
+      // border: 2px solid green; //debug
+    } 
   }    
+}
+@media (max-width: $mobile-bp) {
+  .main {
+    margin-top: 0;
+    .leftDiv {
+      width: 90vw;
+
+    }
+    .rightDiv {
+      display: none;
+      // border: 1px solid blue; //debug
+    }
+  }
 }
 
 .title a {
@@ -84,6 +97,16 @@
     line-height: 1.5;
     font-size: 1.5rem;
   }
+
+  @media (max-width: $tablet-bp) {
+    .title {
+      font-size: 3rem;
+    }
+    .description {
+      font-size: 1.25rem;
+      
+    }
+  }
   
 .card {
     margin: 1rem;
@@ -97,26 +120,24 @@
     border-color: #535353;
     border-radius: 10px;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+ 
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: $tablet-bp) {
+  .card {
+    margin: 0 !important;
   }
-  
-//   .card:hover,
-//   .card:focus,
-//   .card:active {
-//     // background: #535353;
-//     // color: #eaeaea;
-//     /* border-color: #535353; */
-//   }
-  
-  .card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
+}
 
   // maya styles
 

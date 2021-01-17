@@ -7,7 +7,6 @@ export default function Frontpage() {
             <h1 className={styles.title}>
               Cambodia's First Auto Event
             </h1>
-
             <p className={styles.description}>
               At the heart of Phnom Penh, Diamond Island.
               <br></br>
