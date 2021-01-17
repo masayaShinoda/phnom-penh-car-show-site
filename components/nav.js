@@ -27,7 +27,6 @@ export default function Nav() {
             </button>
             <nav id="nav" className={styles.Nav}>
                 <a href="/">Project</a>
-                <a href="/">Timeline</a>
                 <a href="/">Location</a>
                 <a href="/">Contact</a>
                 <a href="/" className={styles.ForSponsorBtn}>For Interested Sponsors &#x2747;</a>

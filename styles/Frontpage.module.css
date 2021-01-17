@@ -41,9 +41,9 @@
   .main {
     width: 100vw;
     margin-top: 5vh;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main .leftDiv {
     -webkit-box-pack: start;
@@ -53,6 +53,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
+    margin-left: 0;
   }
   .main .leftDiv h1, .main .leftDiv p, .main .leftDiv span, .main .leftDiv div, .main .leftDiv a {
     text-align: left;
@@ -60,6 +61,7 @@
   .main .rightDiv {
     width: 40vw;
     height: 60vh;
+    margin-left: 0;
   }
 }
 
@@ -98,8 +100,8 @@
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 1.4;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 1023px) {

@@ -6,11 +6,32 @@
 }
 .Nav {
     position: fixed;
+    display: flex;
+    align-items: center;
     top: 7.5vh;
     right: 10vw;
     a {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
         font-size: 1.1rem;
-        margin: 0 0.5rem;        
+        margin: 0 0.75rem;     
+    }
+    a:after {
+        display: inline-block;
+        content: '';
+        background: #333;
+        color: #333;
+        height: 2px;
+        width: 0%;
+        transition: .2s ease-in;
+    }
+    a:hover::after {
+        width: 100%;
+        
+    }
+    a:last-of-type::after {
+        display: none;
     }
 }
 .ForSponsorBtn {
@@ -24,15 +45,13 @@
     color: #fcfcfc;
     padding: 0.5rem 0.8rem;
     transition: .2s ease-in-out;    
-
 }
 .ForSponsorBtn:hover {
     background: #dbdbdb;
     color: #333;
 }
 @media (max-width: $tablet-bp) {
-    .openNavBtn, .closeNavBtn {
-        
+    .openNavBtn, .closeNavBtn {   
         position: fixed;
         top: 5vh;
         left: 5vw;
