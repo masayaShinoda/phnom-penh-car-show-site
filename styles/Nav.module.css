@@ -141,6 +141,9 @@
     padding: 2.5vh 7.5vw;
     margin: 0;
   }
+  .Nav a:hover::after {
+    display: none;
+  }
   .Nav a:hover,
   .Nav a:focus,
   .Nav a:active {
